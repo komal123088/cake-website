@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryClr: #e3bf4c;
+}
+body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  background: transparent;
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.section {
+  padding: 20px 30px;
+}

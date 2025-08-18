@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+.blog-section {
+  color: #fff;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 1.875rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+
+.section-header h2 {
+  font-family: "Allura", cursive;
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+}
+
+.more-btn {
+  background: var(--primaryClr);
+  border: none;
+  padding: 1.25rem 2.8125rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+  transition: 0.4s all ease-in-out;
+}
+
+.more-btn:hover {
+  background: transparent;
+  border: 1px solid var(--primaryClr);
+  color: var(--primaryClr);
+}
+
+.blogs {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  background: #111;
+  display: flex;
+  flex: 1 1 45%;
+  max-width: 600px;
+  border: 1px solid #333;
+}
+
+.blog-card img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.blog-content h3 {
+  color: var(--primaryClr);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  margin-bottom: 0.625rem;
+}
+
+.blog-content p {
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  line-height: 1.6;
+  margin-bottom: 0.9375rem;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: var(--primaryClr);
+  font-weight: bold;
+  border-bottom: 1px solid var(--primaryClr);
+}
+
+.instagram h2 {
+  margin-bottom: 4.0625rem;
+  margin-top: 5.625rem;
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
+}
+
+.insta-btn {
+  background: none;
+  border: 1px solid var(--primaryClr);
+  color: var(--primaryClr);
+  padding: 0.9375rem 2.25rem;
+  margin-bottom: 3.125rem;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+
+.insta-btn:hover {
+  background: var(--primaryClr);
+  color: #000;
+}
+
+.insta-gallery {
+  display: flex;
+  gap: 0.9375rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.insta-gallery img {
+  width: clamp(10rem, 25vw, 12.5rem);
+  height: clamp(9rem, 22vw, 11.25rem);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 1.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.5rem, 4.5vw, 2rem);
+  }
+
+  .more-btn {
+    padding: 0.75rem 2rem;
+    font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+  }
+
+  .blog-card {
+    flex-direction: column;
+    max-width: 90%;
+    flex: 1 1 100%;
+  }
+
+  .blog-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-content {
+    padding: 1rem;
+  }
+
+  .blog-content h3 {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+  }
+
+  .blog-content p {
+    font-size: clamp(0.7rem, 2vw, 0.8125rem);
+  }
+
+  .instagram h2 {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+
+  .insta-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+  }
+
+  .insta-gallery img {
+    width: clamp(8rem, 22vw, 10rem);
+    height: clamp(7rem, 20vw, 9rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-section {
+    padding: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+  }
+
+  .more-btn {
+    padding: 0.625rem 1.5rem;
+    font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+  }
+
+  .blogs {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-card {
+    max-width: 95%;
+  }
+
+  .instagram h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1rem, 4vw, 1.25rem);
+  }
+
+  .insta-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+  }
+
+  .insta-gallery {
+    gap: 0.5rem;
+  }
+
+  .insta-gallery img {
+    width: clamp(7rem, 45vw, 8rem);
+    height: clamp(6rem, 40vw, 7rem);
+  }
+}

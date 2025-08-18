@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(../../assets/image/cake.webp);
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.hero-content {
+  margin-left: clamp(2rem, 5vw, 5rem);
+  max-width: 90%;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-family: "Allura", cursive;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+.hero-content button {
+  background-color: var(--primaryClr);
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.875rem; /* Converted to rem */
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* Responsive font size */
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.hero-content button:hover {
+  background-color: #caa53d;
+}
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh; /* Reduce height for better mobile experience */
+    justify-content: center; /* Center content */
+    margin-top: 1rem;
+  }
+
+  .hero-content {
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text for better aesthetics */
+    max-width: 80%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 7vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-content button {
+    padding: 0.625rem 1.5rem;
+    font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero {
+    background-position: 60% center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 2.5rem);
+    margin-top: 250px;
+    font-weight: 900;
+  }
+
+  .hero-content button {
+    padding: 0.5rem 1.25rem;
+    font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+  }
+}

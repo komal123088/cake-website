@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+.navbar {
+  background: #0a0a0a;
+  color: white;
+  padding: 1rem 5%;
+  position: relative;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.social-icons svg:hover {
+  color: var(--primaryClr);
+  transition: color 0.3s ease;
+}
+
+.logo {
+  font-family: "Allura", cursive;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  color: var(--primaryClr);
+  font-weight: 100;
+  text-align: center;
+}
+
+.call-btn a {
+  border: 1px solid var(--primaryClr);
+  padding: 0.75rem 1rem;
+  color: var(--primaryClr);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.call-btn a:hover {
+  background: var(--primaryClr);
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.75rem 0;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin-left: 20%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primaryClr);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3125rem;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 1.5rem;
+  height: 0.1875rem;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(2) {
+  width: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .social-icons {
+    order: 1;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .call-btn {
+    order: 3;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -18%;
+    width: 100%;
+    background: #0a0a0a;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+}
