@@ -88,7 +88,7 @@ function Footer() {
       <div className="footer-bottom">
         <p>
           Copyright ©2025 All rights reserved | This Website is made with
-          <span className="colorlib"> Komal</span>
+          <span className="colorlib"> Creative Babar Team</span>
         </p>
       </div>
     </footer>
